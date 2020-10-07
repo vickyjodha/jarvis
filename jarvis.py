@@ -53,7 +53,8 @@ def sendEmail(to, content):
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.ehlo()
     server.starttls()
-    server.login('vikeyjodha@gmail.com', 'Rathoer12@')
+    # email and password set google email less scury
+    server.login('youremail', 'youepassword')
     server.sendmail('vs4110690@gmail.com', to, content)
 
 
